@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Assignment81';
+export class AppComponent 
+{
+  sname:string;
+
+  fun(event:any)
+  {
+    this.sname = (<HTMLInputElement>event.target).value;
+  }
 }
